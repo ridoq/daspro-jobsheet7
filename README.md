@@ -108,3 +108,36 @@ if (nilai > 80 && nilai <= 100) {
 //...
 ```
 5. done
+
+---
+# Percobaan - 3
+
+Di sebuah kafe, kasir ingin memproses transaksi beberapa pelanggan. Pelanggan dapat
+membeli lebih dari satu item (kopi dengan harga Rp 12.000, teh dengan harga Rp 7.000, dan
+roti dengan harga Rp 20.000), dan kasir akan terus memasukkan jumlah pembelian untuk
+setiap pelanggan. Jika ada pelanggan yang memutuskan untuk membatalkan transaksi
+(dengan memasukkan "batal"), maka kasir akan menghentikan input transaksi dan program
+berhenti.
+Berdasarkan studi kasus tersebut, buat program menggunakan bahasa pemrograman
+Java.
+
+---
+## Soal
+
+1. Pada penggunaan DO-WHILE ini, apabila nama pelanggan yang dimasukkan pertama kali adalah “batal”, maka berapa kali perulangan dilakukan?
+2. Sebutkan kondisi berhenti yang digunakan pada perulangan DO-WHILE tersebut!
+3. Apa fungsi dari penggunaan nilai true pada kondisi DO-WHILE?
+4. Mengapa perulangan DO-WHILE tersebut tetap berjalan meskipun tidak ada komponen
+inisialisasi dan update?
+
+---
+## Jawaban
+
+1. satu kali, walaupun program tidak sepenuhnya dijalankan, terdapat program yang  tetap dijalankan sekali meskipun program telah keluar dari loop karena _break_, code yang dijalankan pada _do_ sebelum _break_ berupa:
+```java
+System.out.print("Masukkan nama pelanggan (ketik batal untuk keluar): ");
+namaPelanggan = sc.nextLine();
+if (namaPelanggan.equalsIgnoreCase("batal")) {
+    System.out.println("Transaksi dibatalkan");
+}
+```
