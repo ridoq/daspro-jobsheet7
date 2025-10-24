@@ -97,3 +97,4 @@ program menampilkan pesan tambahan "Bagus, pertahankan nilainya"!
     - a. (nilai < 0 || nilai > 100) berfungsi untuk memberikan kondisi apabila input (nilai)pengguna kurang dari 0 atau lebih dari 100, lalu perintah apabila bernilai true
     - b. (continue) Untuk menghentikan eksekusi kode di dalam loop, lalu memaksa loop untuk langsung melompat kembali ke awal (kesini -> while (i < jml) ).
 2. logika nya akan rusak, karena jika i++ ditaruh di awal perulangan while sebelum kode [System.out.print("Masukkan nilai mahasiswa ke-" + (i +1) + ": ");], maka ketika memasukkan mahasiswa yang seharunya benar urutannya misal mahasiswa ke-1, nilainya akan bertambah satu jadi mahasiswa ke-2, karena pertambahan iterasinya ditaruh di awal sebelum prosesnya selesai
+3. jawabannya ya tetap 19 kali perulangan karena inisialisasinya mulai dari angka 0 dan kondisi nya adalah menggunakan perbandingan "kurang dari(<)" bukan "kurang dari sama dengan(<=)"
