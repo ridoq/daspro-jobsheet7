@@ -142,12 +142,12 @@ if (namaPelanggan.equalsIgnoreCase("batal")) {
 }
 ```
 2. kondisi berhenti yang digunakan adalah berikut:
-```java
-if (namaPelanggan.equalsIgnoreCase("batal")){
-    //...
-    break;
-}
-```
+    ```java
+    if (namaPelanggan.equalsIgnoreCase("batal")){
+        //...
+        break;
+    }
+    ```
 kondisi berhenti yang digunakan adalah ketika pengguna menginputkan "batal" pada input namaPelanggan
 
 3. supaya terjadi infinite loop, jadi program akan dijalankan terus menerus dikarenakan kondisinya _true_ , program dapat berhenti dengan menjalakan perintah _break_ untuk keluar dari infinite loop yang kondisi loop nya menggunakan _true_
