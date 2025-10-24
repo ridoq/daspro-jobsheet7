@@ -28,3 +28,4 @@ dan terendah. Perhatikan flowchart berikut ini:
     - Inisialisasi: int i = 1 (variabel penghitung dimulai dari 1.)
     - Kondisi: i <= 10 (perulangan akan terus dijalankan selama i kurang dari atau sama dengan 10.)
     - Increment: i++ (setiap selesai satu putaran, nilai i akan bertambah 1.)
+2. Nilai tertinggi di awal dianggap 0 agar nilai mahasiswa pertama pasti lebih besar dan menggantikan nilai awal. Nilai terendah di awal dianggap 100 agar nilai mahasiswa pertama pasti lebih kecil dan menggantikan nilai awal.
