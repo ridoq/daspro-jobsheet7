@@ -33,34 +33,34 @@ dan terendah. Perhatikan flowchart berikut ini:
     - if pertama memeriksa apakah nilai yang diinputkan pengguna lebih besar dari nilai tertinggi sebelumnya. Jika iya maka tertinggi diperbarui dengan nilai tersebut.
     - if kedua kebalikannya yaitu memeriksa apakah nilai yang diinputkan pengguna lebih kecil dari nilai terendah sebelumnya. Jika iya maka terendah diperbarui dengan nilai tersebut.
 4. berikut kode yang udah dimodifikasi:
-```java
-public static void main(String[] args) {
-    Scanner sc = new Scanner(System.in);
-    double nilai, tertinggi = 0, terendah = 100;
-    int mahasiswaLulus = 0; //M
-    int mahasiswaTidakLulus = 0; //M
-    for (int i = 1; i <= 10; i++) {
-        System.out.print("Masukkan nilai mahasiswa ke-" + i + ": ");
-        nilai = sc.nextDouble();
-        if (nilai > tertinggi) {
-            tertinggi = nilai;
+    ```java
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        double nilai, tertinggi = 0, terendah = 100;
+        int mahasiswaLulus = 0; //M
+        int mahasiswaTidakLulus = 0; //M
+        for (int i = 1; i <= 10; i++) {
+            System.out.print("Masukkan nilai mahasiswa ke-" + i + ": ");
+            nilai = sc.nextDouble();
+            if (nilai > tertinggi) {
+                tertinggi = nilai;
+            }
+            if (nilai < terendah) {
+                terendah = nilai;   
+            }
+            if (nilai >= 60 ) { //M
+                mahasiswaLulus++; //M
+            }else{ //M
+                mahasiswaTidakLulus++; //M
+            } //M
         }
-        if (nilai < terendah) {
-            terendah = nilai;   
-        }
-        if (nilai >= 60 ) { //M
-            mahasiswaLulus++; //M
-        }else{ //M
-            mahasiswaTidakLulus++; //M
-        } //M
+        System.out.println("Nilai tertinggi: " + tertinggi);
+        System.out.println("Nilai terendah: " + terendah);
+        System.out.println("Jumlah mahasiswa yang lulus: " + mahasiswaLulus); //M
+        System.out.println("Jumlah mahasiswa yang tidak lulus: " + mahasiswaTidakLulus);//M
+        sc.close();
     }
-    System.out.println("Nilai tertinggi: " + tertinggi);
-    System.out.println("Nilai terendah: " + terendah);
-    System.out.println("Jumlah mahasiswa yang lulus: " + mahasiswaLulus); //M
-    System.out.println("Jumlah mahasiswa yang tidak lulus: " + mahasiswaTidakLulus);//M
-    sc.close();
-}
-```
+    ```
 
 5. done
 
@@ -99,14 +99,14 @@ program menampilkan pesan tambahan "Bagus, pertahankan nilainya"!
 2. logika nya akan rusak, karena jika i++ ditaruh di awal perulangan while sebelum kode [System.out.print("Masukkan nilai mahasiswa ke-" + (i +1) + ": ");], maka ketika memasukkan mahasiswa yang seharunya benar urutannya misal mahasiswa ke-1, nilainya akan bertambah satu jadi mahasiswa ke-2, karena pertambahan iterasinya ditaruh di awal sebelum prosesnya selesai
 3. jawabannya ya tetap 19 kali perulangan karena inisialisasinya mulai dari angka 0 dan kondisi nya adalah menggunakan perbandingan "kurang dari(<)" bukan "kurang dari sama dengan(<=)"
 4. berikut kode yang udah dimodifikasi:
-```java
-//...
-if (nilai > 80 && nilai <= 100) {
-    System.out.println("Nilai mahasiswa ke-" + (i +1) + " adalah A");
-    System.out.println("Bagus, pertahankan nilainya"); //M
-}
-//...
-```
+    ```java
+    //...
+    if (nilai > 80 && nilai <= 100) {
+        System.out.println("Nilai mahasiswa ke-" + (i +1) + " adalah A");
+        System.out.println("Bagus, pertahankan nilainya"); //M
+    }
+    //...
+    ```
 5. done
 
 ---
@@ -134,13 +134,13 @@ inisialisasi dan update?
 ## Jawaban
 
 1. satu kali, walaupun program tidak sepenuhnya dijalankan, terdapat program yang  tetap dijalankan sekali meskipun program telah keluar dari loop karena _break_, code yang dijalankan pada _do_ sebelum _break_ berupa:
-```java
-System.out.print("Masukkan nama pelanggan (ketik batal untuk keluar): ");
-namaPelanggan = sc.nextLine();
-if (namaPelanggan.equalsIgnoreCase("batal")) {
-    System.out.println("Transaksi dibatalkan");
-}
-```
+    ```java
+    System.out.print("Masukkan nama pelanggan (ketik batal untuk keluar): ");
+    namaPelanggan = sc.nextLine();
+    if (namaPelanggan.equalsIgnoreCase("batal")) {
+        System.out.println("Transaksi dibatalkan");
+    }
+    ```
 2. kondisi berhenti yang digunakan adalah berikut:
     ```java
     if (namaPelanggan.equalsIgnoreCase("batal")){
@@ -148,7 +148,7 @@ if (namaPelanggan.equalsIgnoreCase("batal")) {
         break;
     }
     ```
-kondisi berhenti yang digunakan adalah ketika pengguna menginputkan "batal" pada input namaPelanggan
+    kondisi berhenti yang digunakan adalah ketika pengguna menginputkan "batal" pada input namaPelanggan
 
 3. supaya terjadi infinite loop, jadi program akan dijalankan terus menerus dikarenakan kondisinya _true_ , program dapat berhenti dengan menjalakan perintah _break_ untuk keluar dari infinite loop yang kondisi loop nya menggunakan _true_
 4. ini dapat terjadi karena:
