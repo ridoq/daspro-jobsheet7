@@ -151,3 +151,8 @@ if (namaPelanggan.equalsIgnoreCase("batal")){
 kondisi berhenti yang digunakan adalah ketika pengguna menginputkan "batal" pada input namaPelanggan
 
 3. supaya terjadi infinite loop, jadi program akan dijalankan terus menerus dikarenakan kondisinya _true_ , program dapat berhenti dengan menjalakan perintah _break_ untuk keluar dari infinite loop yang kondisi loop nya menggunakan _true_
+4. ini dapat terjadi karena:
+    1. merupakan indefinite loop, perulangan yang dieksekusi selama kondisi bernilai true
+    2. karena kondisinya bernilai "true", sejatinya perulangan dapat terjadi apabila kondisinya terpenuhi/true
+    
+    pada definite loop inisialisasi dan update digunakan untuk memberikan batasan pada perulangan, sedangkan pada perulanngan DO-WHILE kali ini tu batasan eksekusinya tidak diketahui, jadi loop akan terus berjalan selama kondisi true sampai kondisinya menjadi false atau terjadi break
