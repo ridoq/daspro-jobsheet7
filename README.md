@@ -141,3 +141,11 @@ if (namaPelanggan.equalsIgnoreCase("batal")) {
     System.out.println("Transaksi dibatalkan");
 }
 ```
+2. kondisi berhenti yang digunakan adalah berikut:
+```java
+if (namaPelanggan.equalsIgnoreCase("batal")){
+    //...
+    break;
+}
+```
+kondisi berhenti yang digunakan adalah ketika pengguna menginputkan "batal" pada input namaPelanggan
