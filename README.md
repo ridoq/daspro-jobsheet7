@@ -6,7 +6,7 @@ tertinggi dan terendah Kuis dari 10 mahasiswa di dalam satu kelas. Dosen tersebu
 memasukkan nilai dari setiap siswa, kemudian menentukan dan menampilkan nilai tertinggi
 dan terendah. Perhatikan flowchart berikut ini:
 
-![ketentuan](assets/img/percobaan1.png)
+![penjelasan](assets/img/percobaan1.png)
 
 ---
 ## Soal
@@ -15,7 +15,7 @@ dan terendah. Perhatikan flowchart berikut ini:
 2. Mengapa variabel tertinggi diinisialisasi 0 dan terendah diinisialisasi 100? Apa yang terjadi jika variabel tertinggi diinisialisasi 100 dan terendah diinisialisasi 0?
 3. Jelaskan fungsi dan alur kerja dari potongan kode berikut!
 
-![ketentuan](assets/img/p1-no3.png)
+![soalno3](assets/img/p1-no3.png)
 
 4. Modifikasi kode program sehingga terdapat perhitungan untuk menentukan berapa mahasiswa yang lulus dan yang tidak lulus berdasarkan batas kelulusan (nilai minimal 60). Tampilkan jumlah mahasiswa lulus dan tidak lulus setelah menampilkan nilai tertinggi dan terendah!
 
@@ -63,3 +63,36 @@ public static void main(String[] args) {
 ```
 
 5. done
+
+---
+# Percobaan - 2
+
+Seorang dosen ingin memasukkan nilai beberapa mahasiswa ke dalam SIAKAD untuk
+ditentukan kategori nilai hurufnya. Program harus meminta dosen untuk memasukkan nilai
+setiap mahasiswa. Jika dosen memasukkan nilai yang tidak valid (negatif atau lebih dari 100),
+program harus mengabaikan input tersebut dan meminta dosen untuk melakukan input
+ulang. Selanjutnya, nilai yang valid dikelompokkan ke dalam kategori huruf A (80 < nilai ≤ 100),
+B+ (73 < nilai ≤ 80), B (65 < nilai ≤ 73), C+ (60 < nilai ≤ 65), C (50 < nilai ≤ 60), D (39 < nilai ≤ 50),
+dan E (nilai ≤ 39).
+Berdasarkan studi kasus tersebut, buat program menggunakan bahasa pemrograman
+Java.
+
+---
+## Soal
+
+1. Pada potongan kode berikut, tentukan maksud dan kegunaan dari sintaks berikut:
+
+![soalno1](assets/img/p2-no1.png)
+
+2. Mengapa sintaks i++ dituliskan di akhir perulangan WHILE? Apa yang terjadi jika posisinya dituliskan di awal perulangan WHILE?
+3. Apabila jumlah mahasiswa yang dimasukkan adalah 19, berapa kali perulangan WHILE akan berjalan?
+4. Modifikasi kode program sehingga apabila terdapat mahasiswa yang mendapat nilai A,
+program menampilkan pesan tambahan "Bagus, pertahankan nilainya"!
+5. Commit dan push kode program ke Github
+
+---
+## Jawaban
+
+1. berikut penjelasannya guys:
+    - a. (nilai < 0 || nilai > 100) berfungsi untuk memberikan kondisi apabila input (nilai)pengguna kurang dari 0 atau lebih dari 100, lalu perintah apabila bernilai true
+    - b. (continue) Untuk menghentikan eksekusi kode di dalam loop, lalu memaksa loop untuk langsung melompat kembali ke awal (kesini -> while (i < jml) ).
