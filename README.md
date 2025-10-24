@@ -29,3 +29,7 @@ dan terendah. Perhatikan flowchart berikut ini:
     - Kondisi: i <= 10 (perulangan akan terus dijalankan selama i kurang dari atau sama dengan 10.)
     - Increment: i++ (setiap selesai satu putaran, nilai i akan bertambah 1.)
 2. Nilai tertinggi di awal dianggap 0 agar nilai mahasiswa pertama pasti lebih besar dan menggantikan nilai awal. Nilai terendah di awal dianggap 100 agar nilai mahasiswa pertama pasti lebih kecil dan menggantikan nilai awal.
+3. Fungsi dari codenya adalah sebagi berikut:
+    - if pertama memeriksa apakah nilai yang diinputkan pengguna lebih besar dari nilai tertinggi sebelumnya. Jika iya maka tertinggi diperbarui dengan nilai tersebut.
+    - if kedua kebalikannya yaitu memeriksa apakah nilai yang diinputkan pengguna lebih kecil dari nilai terendah sebelumnya. Jika iya maka terendah diperbarui dengan nilai tersebut.
+4. 
